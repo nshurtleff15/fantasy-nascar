@@ -211,9 +211,8 @@
                                         echo '</td></tr>';
 
                                         $j++;
-                                        if ($j == 10) {
-                                            echo '<tr style="border: 3px solid white"><td colspan="5" style="font-weight:lighter; font-size: 12px"> e -- Mathematically Eliminated From Playoffs</br>w -- Clinched Wild Card Berth</br>x -- Clinched Playoff Berth</br>y -- Clinched Top 3 Seed</td></tr>';
-                                        }
+                                        
+                                        echo ($j == 10) ? '<tr style="border: 3px solid white"><td colspan="5" style="font-weight:lighter; font-size: 12px"> e -- Mathematically Eliminated From Playoffs</br>w -- Clinched Wild Card Berth</br>x -- Clinched Playoff Berth</br>y -- Clinched Top 3 Seed</td></tr>' : '';
                                     }
                                 ?>                                                 
                             </tbody>
